@@ -24,7 +24,7 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        Intent intent = getIntent();
+//        Intent intent = getIntent();
     }
 
 
@@ -43,8 +43,8 @@ public class DirectionsActivity extends FragmentActivity implements OnMapReadyCa
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng glencoe = new LatLng(56.6325, -4.8279);
+        mMap.addMarker(new MarkerOptions().position(glencoe).title("Marker in Glencoe"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(glencoe));
     }
 }
